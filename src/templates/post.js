@@ -3,7 +3,7 @@ import graphql from 'graphql';
 import Helmet from 'react-helmet';
 import Content, { HTMLContent } from '../components/Content';
 
-export const BlogPostTemplate = ({
+export const PostPostTemplate = ({
   content, contentComponent, description, title, helmet,
 }) => {
   const PostContent = contentComponent || Content;
@@ -27,17 +27,17 @@ export const BlogPostTemplate = ({
 export default ({ data }) => {
   const { markdownRemark: post } = data;
 
-  return (<BlogPostTemplate
+  return (<PostPostTemplate
     content={post.html}
     contentComponent={HTMLContent}
     description={post.frontmatter.description}
-    helmet={<Helmet title={`Blog | ${post.frontmatter.title}`} />}
+    helmet={<Helmet title={`Post | ${post.frontmatter.title}`} />}
     title={post.frontmatter.title}
   />);
 };
 
 export const pageQuery = graphql`
-  query BlogPostByPath($path: String!) {
+  query PostPostByPath($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {

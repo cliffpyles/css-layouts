@@ -6,7 +6,10 @@ import './all.sass';
 
 const TemplateWrapper = ({ children }) => (
   <div>
-    <Helmet title="CSS Layouts" />
+    <Helmet>
+      <title>CSS Layouts</title>
+      <link rel="stylesheet" href="//use.typekit.net/bxp4zom.css" />
+    </Helmet>
     <div>{children()}</div>
   </div>
 );
