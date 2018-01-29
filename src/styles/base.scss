@@ -1,0 +1,45 @@
+$lapisLazuli: #1966A0 !default;
+$deepSpaceSparkle: #4C5C68 !default;
+$outerSpace: #46494C !default;
+$lavendarGray: #C5C3C6 !default;
+$gainsboro: #DCDCDD !default;
+$trueWhite: #ffffff !default;
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-family: futura-pt,sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+
+// Layouts
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  &__header {}
+  &__main {
+    flex: 1;
+  }
+  &__footer {}
+}
+
+
+// Templates
+.documentation {
+  &__header {}
+  &__sidebar {}
+  &__content {}
+  &__footer {}
+}

@@ -1,16 +1,24 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
+import Toolbar from '../components/Toolbar'
 
-import './all.sass';
+import '../styles/base.scss';
 
 const TemplateWrapper = ({ children }) => (
-  <div>
+  <div className="layout">
     <Helmet>
       <title>CSS Layouts</title>
       <link rel="stylesheet" href="//use.typekit.net/bxp4zom.css" />
     </Helmet>
-    <div>{children()}</div>
+    <header className="layout__header">
+      <h1>CSS Layouts</h1>
+    </header>
+    <main className="layout__main">
+      <Toolbar />
+      {children()}
+    </main>
+    <footer className="layout__footer"></footer>
   </div>
 );
 
