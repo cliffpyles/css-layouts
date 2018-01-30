@@ -72,7 +72,16 @@ module.exports = {
               // eg <a href="..." target="_blank" rel="noreferrer">...</a>
               // target: '_blank',
             },
-          }
+          },
+          {
+            resolve: "gatsby-remark-codepen-embed",
+            options: {
+              blocks: {
+                danger: "custom-block-danger",
+                info: "custom-block-info",
+              },
+            },
+          },
         ],
       },
     },
