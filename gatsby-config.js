@@ -30,19 +30,48 @@ module.exports = {
           {
             resolve: 'gatsby-remark-embed-snippet',
             options: {
-              // Class prefix for <pre> tags containing syntax highlighting;
-              // defaults to 'language-' (eg <pre class="language-js">).
-              // If your site loads Prism into the browser at runtime,
-              // (eg for use with libraries like react-live),
-              // you may use this to prevent Prism from re-processing syntax.
-              // This is an uncommon use-case though;
-              // If you're unsure, it's best to use the default value.
               classPrefix: 'language-',
+              directory: `${__dirname}/examples/`,
+            }
+          },
+          {
+            resolve: 'gatsby-remark-code-repls',
+            options: {
+              // Optional default link text.
+              // Defaults to "REPL".
+              // eg <a href="...">Click here</a>
+              // defaultText: 'Click here',
+
+              // Optional runtime dependencies to load from NPM.
+              // This option only applies to REPLs that support it (eg CodeSandbox).
+              // eg ['react', 'react-dom'] or ['react@15', 'react-dom@15']
+              // dependencies: [],
 
               // Example code links are relative to this dir.
               // eg examples/path/to/file.js
               directory: `${__dirname}/examples/`,
-            }
+
+              // Optional externals to load from a CDN.
+              // This option only applies to REPLs that support it (eg Codepen).
+              // eg '//unpkg.com/react/umd/react.development.js'
+              // externals: ['https://production-assets.codepen.io/assets/embed/ei.js'],
+
+              // Optional HTML contents to inject into REPL.
+              // Defaults to `<div id="root"></div>`.
+              // This option only applies to REPLs that support it (eg Codepen, CodeSandbox).
+              // eg '<div id="root"></div>'
+              // html: '',
+
+              // Optional path to a custom redirect template.
+              // The redirect page is only shown briefly,
+              // But you can use this setting to override its CSS styling.
+              // redirectTemplate: `${__dirname}/src/redirect-template.js`),
+
+              // Optional link target.
+              // Note that if a target is specified, "noreferrer" will also be added.
+              // eg <a href="..." target="_blank" rel="noreferrer">...</a>
+              // target: '_blank',
+            },
           }
         ],
       },
