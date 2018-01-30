@@ -30,6 +30,24 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-pathdata',
+      options: {
+        matchNodeType: 'MarkdownRemark',
+        extract: [
+          {
+            name: 'path',
+            selector: /.+\/(\d+-\d+-\d+-[\w-]+)\.md$/,
+            replacer: '/$1/'
+          },
+          {
+            name: 'date',
+            selector: /.+\/(\d+-\d+-\d+)-[\w-]+\.md$/,
+            replacer: '$1'
+          }
+        ]
+      }
+    },
+    {
       resolve: 'gatsby-plugin-netlify-cms',
       options: {
         modulePath: `${__dirname}/src/cms/cms.js`,
