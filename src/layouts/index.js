@@ -4,6 +4,7 @@ import Helmet from 'react-helmet';
 import Toolbar from '../components/Toolbar'
 
 import '../styles/base.scss';
+import 'prismjs/themes/prism-solarizedlight.css';
 
 const TemplateWrapper = ({ children }) => (
   <div className="layout">
