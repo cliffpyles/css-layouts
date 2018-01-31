@@ -1,10 +1,20 @@
+const cssnext = require('postcss-cssnext')
+
 module.exports = {
   siteMetadata: {
     title: 'Gatsby Default Starter',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-sass',
+    {
+      resolve: `gatsby-plugin-postcss-sass`,
+      options: {
+        postCssPlugins: [
+          cssnext()
+        ],
+        precision: 5
+      },
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -72,16 +82,7 @@ module.exports = {
               // eg <a href="..." target="_blank" rel="noreferrer">...</a>
               // target: '_blank',
             },
-          },
-          {
-            resolve: "gatsby-remark-codepen-embed",
-            options: {
-              blocks: {
-                danger: "custom-block-danger",
-                info: "custom-block-info",
-              },
-            },
-          },
+          }
         ],
       },
     },
