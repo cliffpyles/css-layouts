@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import css from 'styled-jsx/css'
-import styles from './styles.scss'
+import css from 'styled-jsx/css';
+import styles from './styles.scss';
 
 const ComponentStyles = css`styles`;
 

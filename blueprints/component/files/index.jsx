@@ -1,9 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import css from 'styled-jsx/css';
+import styles from './styles.scss';
 
-import './styles.scss';
+const ComponentStyles = css`styles`;
 
-const modifiers = []
+const modifiers = [];
 
 class Component extends React.Component {
   constructor(props) {
@@ -21,7 +23,10 @@ class Component extends React.Component {
 
   render() {
     return (
-      <div className={`${this.state.classModifiers}`}>{ this.props.children }</div>
+      <div className={`{{_meta.bemName}} ${this.state.classModifiers}`}>
+        { this.props.children }
+        <style jsx>{ComponentStyles}</style>
+      </div>
     )
   }
 }

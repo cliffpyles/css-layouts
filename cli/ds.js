@@ -51,7 +51,8 @@ program
       destinationNamePascalized: inflection.camelize(destinationName),
       destinationNameTableized: inflection.tableize(destinationName),
       destinationNameCapitalized: inflection.capitalize(destinationName),
-      bemName: inflection.transform(destinationName, ['underscore', 'titleize', 'dasherize']),
+      // bemName: inflection.transform(destinationName, ['underscore', 'titleize', 'dasherize']),
+      bemName: inflection.transform(destinationName, ['camelize']),
     }
 
 
