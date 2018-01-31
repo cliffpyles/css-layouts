@@ -9,8 +9,8 @@ const modifiers = [];
 
 const {{_meta.bemName}} = (props) => {
   let classModifiers = Object.keys(props).reduce((accum, prop) => {
-    if (modifiers.includes(prop)) {
-      accum = `${accum} ${prop}`
+    if (modifiers.includes(prop) && props[prop]) {
+      accum = `${accum} ${prop}`;
     }
     return accum
   }, '');
