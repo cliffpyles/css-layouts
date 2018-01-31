@@ -9,6 +9,7 @@ import DsAlert from '../components/DsAlert';
 import DsBreadcrumb from '../components/DsBreadcrumb';
 import DsButton from '../components/DsButton';
 import DsCard from '../components/DsCard';
+import DsModal from '../components/DsModal';
 import DsMenu from '../components/DsMenu';
 import DsNav from '../components/DsNav';
 import DsPagination from '../components/DsPagination';
@@ -116,6 +117,11 @@ export default class IndexPage extends React.Component {
                 </DsCard>
               </Comparison>
 
+              {/* Modal Comparison */}
+              <Comparison title="Modals">
+                <button onClick={() => {this.setState({modalIsActive: true})}}>Toggle Modal</button>
+                <DsModal is-active={this.state.modalIsActive} />
+              </Comparison>
 
               {/* Menu Comparison */}
               <Comparison title="Menus">

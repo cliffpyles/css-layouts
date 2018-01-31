@@ -7,6 +7,7 @@ export default {
     { href: '/examples', text: 'examples' },
     { href: '/layouts', text: 'layouts' }
   ],
+  modalIsActive: false,
   menuItems: [
     { href: '/', text: 'Design System' },
     {
