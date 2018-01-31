@@ -15,6 +15,7 @@ module.exports = {
         precision: 5
       },
     },
+    `gatsby-plugin-styled-jsx`,
     {
       resolve: 'gatsby-source-filesystem',
       options: {

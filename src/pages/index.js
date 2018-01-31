@@ -28,7 +28,6 @@ export default class IndexPage extends React.Component {
           onLoad={() => this.handleScriptLoad()}
         />
         <div className="container">
-
         </div>
       </section>
     );

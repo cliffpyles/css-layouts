@@ -13,6 +13,7 @@
     "gatsby-plugin-react-helmet": "^1.0.5",
     "gatsby-plugin-sass": "^1.0.12",
     "gatsby-plugin-sharp": "^1.6.18",
+    "gatsby-plugin-styled-jsx": "^2.0.2",
     "gatsby-remark-autolink-headers": "^1.4.11",
     "gatsby-remark-code-repls": "^1.0.8",
     "gatsby-remark-embed-snippet": "^1.0.6",
@@ -25,7 +26,8 @@
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-helmet": "^5.2.0",
-    "react-load-script": "0.0.6"
+    "react-load-script": "0.0.6",
+    "styled-jsx": "^2.2.3"
   },
   "keywords": [],
   "license": "MIT",
