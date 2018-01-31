@@ -7,7 +7,7 @@ const ComponentStyles = css `styles`;
 
 const modifiers = [];
 
-const Component = (props) => {
+const {{_meta.bemName}} = (props) => {
   let classModifiers = Object.keys(props).reduce((accum, prop) => {
     if (modifiers.includes(prop)) {
       accum = `${accum} ${prop}`
@@ -23,10 +23,10 @@ const Component = (props) => {
   )
 }
 
-Component.propTypes = modifiers.reduce((accum, modifier) => {
+{{_meta.bemName}}.propTypes = modifiers.reduce((accum, modifier) => {
   accum[modifier] = PropTypes.bool;
 
   return accum;
 }, {});
 
-export default Component
+export default {{_meta.bemName}}
