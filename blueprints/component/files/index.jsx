@@ -17,11 +17,8 @@ const Component = (props) => {
 
   return (
     <div className={`{{_meta.bemName}} ${classModifiers}`}>
-      {this.props.children}
-      <style jsx>
-        {
-          ComponentStyles
-        }</style>
+      {props.children}
+      <style jsx>{ComponentStyles}</style>
     </div>
   )
 }
