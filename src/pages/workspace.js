@@ -40,15 +40,21 @@ export default class IndexPage extends React.Component {
     // const { edges: posts } = data.allMarkdownRemark;
 
     return (
-      <section>
+      <section className="workspace">
         <Script
           url="https://identity.netlify.com/v1/netlify-identity-widget.js"
           onLoad={() => this.handleScriptLoad()}
         />
-        <div className="container">
-          <section className="comparisons">
+        <div className="workspace__toolbar">
+          <h3 className="workspace_section-heading">Workspace Settings</h3>
+          <ul>
+
+          </ul>
+        </div>
+        <div className="workspace__body">
+          <h2 className="workspace_page-heading">Workspace</h2>
+          <div className="comparisons">
             <header className="comparisons__header">
-              <h1>Comparisons</h1>
             </header>
 
             <div className="comparisons__body">
@@ -142,7 +148,7 @@ export default class IndexPage extends React.Component {
 
 
             </div>
-          </section>
+          </div>
         </div>
       </section>
     );

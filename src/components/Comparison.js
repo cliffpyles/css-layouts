@@ -21,7 +21,7 @@ class Component extends React.Component {
     return (
       <div className={`Comparison ${this.state.classModifiers}`}>
         <div className="Comparison__header">
-          <h2>{this.props.title}</h2>
+          <h2 className="Comparison_heading">{this.props.title}</h2>
         </div>
         <div className="Comparison__body">
           { this.props.children }

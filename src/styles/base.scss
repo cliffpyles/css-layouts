@@ -21,25 +21,65 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
-
-// Layouts
 .layout {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 
-  &__header {}
+  &__header {
+    display: none;
+  }
   &__main {
     flex: 1;
   }
   &__footer {}
 }
 
-
-// Templates
 .documentation {
   &__header {}
   &__sidebar {}
   &__content {}
   &__footer {}
+}
+
+.comparisons {
+  &__header{}
+  &__body{}
+  &__body > *:not(:last-child) {
+    margin-bottom: 1rem;
+    padding: 2rem 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, .25);
+  }
+}
+
+.Comparison {
+  &_heading {
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, .5);
+  }
+  &__header {
+    margin-bottom: 0.5em;
+  }
+  &__body {}
+}
+
+.Toolbar {}
+
+.workspace {
+  padding: 1rem;
+  display: flex;
+  &_page-heading {
+    font-size: 2rem;
+  }
+  &_section-heading {
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, .5);
+  }
+  &__toolbar {
+    flex: 0 0 33%;
+    padding: 1rem;
+  }
+  &__body {
+    padding: 1rem;
+  }
 }
