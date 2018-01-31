@@ -1,0 +1,34 @@
+$unit-xxs: 2px !default;
+$unit-xs: 4px !default;
+$unit-s: 8px !default;
+$unit-m: 16px !default;
+$unit-l: 32px !default;
+$unit-xl: 64px !default;
+$unit-xxl: 128px !default;
+
+$ds-c-card--Padding: $unit-s !default;
+$ds-c-card--Border: 1px solid #000 !default;
+$ds-c-card--BackgroundColor: #fff !default;
+$ds-c-card--Color: #000 !default;
+
+$ds-c-card__header--Padding: $unit-s !default;
+$ds-c-card__body--Padding: $unit-s !default;
+$ds-c-card--Padding: $unit-s !default;
+
+
+.ds-c-card {
+  display: block;
+  margin: 0;
+  padding: $ds-c-card--Padding;
+  border: $ds-c-card--Border;
+  background-color: $ds-c-card--BackgroundColor;
+  color: $ds-c-card--Color;
+
+  // *:[class^='ds-c-card_'],
+  // *:[class^='ds-c-card_']:before,
+  // *:[class^='ds-c-card_']:after {
+  //   margin: 0;
+  //   padding: 0;
+  // }
+
+}

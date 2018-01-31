@@ -1,0 +1,98 @@
+$unit-xxs: 2px !default;
+$unit-xs: 4px !default;
+$unit-s: 8px !default;
+$unit-m: 16px !default;
+$unit-l: 32px !default;
+$unit-xl: 64px !default;
+$unit-xxl: 128px !default;
+
+$ds-c-button--Padding: $unit-s !default;
+$ds-c-button--Border: 1px solid #000 !default;
+$ds-c-button--BackgroundColor: #fff !default;
+$ds-c-button--Color: #000 !default;
+
+$ds-c-button__header--Padding: $unit-s !default;
+$ds-c-button__body--Padding: $unit-s !default;
+$ds-c-button--Padding: $unit-s !default;
+
+$ds-is-primary--Border: 1px solid #000 !default;
+$ds-is-primary--BackgroundColor: #fff !default;
+$ds-is-primary--Color: #000 !default;
+$ds-is-secondary--Border: 1px solid #000 !default;
+$ds-is-secondary--BackgroundColor: #fff !default;
+$ds-is-secondary--Color: #000 !default;
+$ds-is-success--Border: 1px solid #000 !default;
+$ds-is-success--BackgroundColor: #fff !default;
+$ds-is-success--Color: #000 !default;
+$ds-is-danger--Border: 1px solid #000 !default;
+$ds-is-danger--BackgroundColor: #fff !default;
+$ds-is-danger--Color: #000 !default;
+$ds-is-warning--Border: 1px solid #000 !default;
+$ds-is-warning--BackgroundColor: #fff !default;
+$ds-is-warning--Color: #000 !default;
+$ds-is-info--Border: 1px solid #000 !default;
+$ds-is-info--BackgroundColor: #fff !default;
+$ds-is-info--Color: #000 !default;
+$ds-is-light--Border: 1px solid #000 !default;
+$ds-is-light--BackgroundColor: #fff !default;
+$ds-is-light--Color: #000 !default;
+$ds-is-dark--Border: 1px solid #000 !default;
+$ds-is-dark--BackgroundColor: #fff !default;
+$ds-is-dark--Color: #000 !default;
+
+
+.ds-c-button {
+  display: block;
+  margin: 0;
+  padding: $ds-c-button--Padding;
+  border: $ds-c-button--Border;
+  background-color: $ds-c-button--BackgroundColor;
+  color: $ds-c-button--Color;
+  // *:[class^='ds-c-button_'],
+  // *:[class^='ds-c-button_']:before,
+  // *:[class^='ds-c-button_']:after {
+  //   margin: 0;
+  //   padding: 0;
+  // }
+
+  &.ds-is-primary {
+    border: $ds-is-primary--Border;
+    background-color: $ds-is-primary--BackgroundColor;
+    color: $ds-is-primary--Color;
+  }
+  &.ds-is-secondary {
+    border: $ds-is-secondary--Border;
+    background-color: $ds-is-secondary--BackgroundColor;
+    color: $ds-is-secondary--Color;
+  }
+  &.ds-is-success {
+    border: $ds-is-success--Border;
+    background-color: $ds-is-success--BackgroundColor;
+    color: $ds-is-success--Color;
+  }
+  &.ds-is-danger {
+    border: $ds-is-danger--Border;
+    background-color: $ds-is-danger--BackgroundColor;
+    color: $ds-is-danger--Color;
+  }
+  &.ds-is-warning {
+    border: $ds-is-warning--Border;
+    background-color: $ds-is-warning--BackgroundColor;
+    color: $ds-is-warning--Color;
+  }
+  &.ds-is-info {
+    border: $ds-is-info--Border;
+    background-color: $ds-is-info--BackgroundColor;
+    color: $ds-is-info--Color;
+    }
+  &.ds-is-light {
+    border: $ds-is-light--Border;
+    background-color: $ds-is-light--BackgroundColor;
+    color: $ds-is-light--Color;
+  }
+  &.ds-is-dark {
+    border: $ds-is-dark--Border;
+    background-color: $ds-is-dark--BackgroundColor;
+    color: $ds-is-dark--Color;
+  }
+}
