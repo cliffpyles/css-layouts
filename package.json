@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-netlify-cms",
-  "description": "Example Gatsby, and Netlify CMS project",
-  "version": "1.1.0",
-  "author": "Austin Green",
+  "name": "css-layouts",
+  "description": "Assets, source, tooling, and content for css-layouts.com",
+  "version": "1.0.0",
+  "author": "Cliff Pyles",
   "dependencies": {
     "bulma": "^0.6.0",
     "gatsby": "^1.9.63",
@@ -25,20 +25,25 @@
     "react-helmet": "^5.2.0",
     "react-load-script": "0.0.6"
   },
-  "keywords": [
-    "gatsby"
-  ],
+  "keywords": [],
   "license": "MIT",
   "main": "n/a",
+  "bin": {
+    "ds": "./cli/ds.js"
+  },
   "scripts": {
     "start": "npm run develop",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "serve": "gatsby serve",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write src/**/*.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cli:setup": "npm link"
   },
   "devDependencies": {
-    "prettier": "^1.7.4"
+    "commander": "^2.13.0",
+    "minimist": "^1.2.0",
+    "prettier": "^1.7.4",
+    "template-dir": "^2.0.1"
   }
 }
